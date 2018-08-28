@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -16,10 +17,6 @@ import lv.molssoft.geoempire.adapter.HomeRecyclerAdapter;
 import lv.molssoft.geoempire.dialog.DBPopup;
 import lv.molssoft.geoempire.fragments.FragmentGeneral;
 import lv.molssoft.geoempire.fragments.FragmentHome;
-
-/**
- * Created by Creators Corp 9 on 21/8/2018.
- */
 
 public class ActivityHome extends AppCompatActivity {
 
@@ -30,6 +27,12 @@ public class ActivityHome extends AppCompatActivity {
     HomeRecyclerAdapter adapter;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+    @BindView(R.id.tvUserName)
+    TextView tvUserName;
+    @BindView(R.id.tvBlueText)
+    TextView tvBlueText;
+    @BindView(R.id.tvOrangeText)
+    TextView tvOrangeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +55,7 @@ public class ActivityHome extends AppCompatActivity {
     }
 
     void setUpActionBar() {
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(R.string.user_name);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        tvUserName.setText(getResources().getString(R.string.user_name));
     }
 
     void replaceFragment(Fragment fragment) {

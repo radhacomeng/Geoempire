@@ -6,6 +6,7 @@
     <string name="button_2">Button 2</string>
     <string name="lorem_ipsum">Contrary to popular belief, Lorem Ipsum is not simply random text.</string>
     <string name="user_name">User Name</string>
+    <string name="demo_value">123.56</string>
 
     <string-array name="dashboard_data">
         <item>Icon1</item>
