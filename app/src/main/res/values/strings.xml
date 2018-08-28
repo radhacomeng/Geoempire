@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Geoempire</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_popup">Popup Title</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="lorem_ipsum">Contrary to popular belief, Lorem Ipsum is not simply random text.</string>
+    <string name="user_name">User Name</string>
+
+    <string-array name="dashboard_data">
+        <item>Icon1</item>
+        <item>Icon2</item>
+        <item>Icon3</item>
+        <item>Icon4</item>
+    </string-array>
+</resources>
